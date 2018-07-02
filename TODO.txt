@@ -1,0 +1,11 @@
+DONE: Review use of PUBLIC flag and clean code of "bad" things.
+
+DONE: Review use of other flags and document it (probably in Makefile).
+
+DONE: [FIX] clustredcache.c: TYPE_RESENDREQ messages being sent only when non PUBLIC but when received are only processed when PUBLIC. This causes "Unknown message from cache peer" in debug. It has to be tested.
+
+[FIX] This version stops sending ECM requests to servers for channels after detecting they don't open them. This is good behaviour in general, but it happens that there's no check that the server still doesn't open the channel. It can happen that temporary a server has a problem and it's flagged. When all servers you have configured get flagged for that channel multics will never decode that channel until it's restarted, because there's no follow up.
+
+DONE: [FIX] httpserver.c and base64.c: check maximum length of authorization header. With current implementation it's prone to buffer overflow
+
+[ENH] Add /blocked URI to show status of IPLIST (number of bad logins, blocked peers, etc). Allow also to unblock a peer.
