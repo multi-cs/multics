@@ -1,7 +1,7 @@
 # Multi CardServer R82 - Custom Build 
 
 MultiCS is cardserver proxy.
-Original Author: [Evileyes] (http://www.infosat.org)
+Original Author: [Evileyes](http://www.infosat.org)
 
 
 ## Changelog
@@ -41,4 +41,5 @@ Start multics : /var/multics/multics.? -b or /var/multics/multics.? -b -C /confi
 ## Thanks to
 - [Evileyes](http://www.infosat.org)
 - [Janderklander77](https://github.com/janderklander77)
-- [aikonas](http://multics.info/members/aikonas.14048/)
+- [Messi89](https://github.com/messi89)
+- [aikonas](http://multics.info/members/aikonas.14048)
